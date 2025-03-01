@@ -3,6 +3,8 @@ project(imagedecoder C CXX ASM)
 include(FetchContent)
 
 set(CMAKE_BUILD_TYPE Release)
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Ofast")
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -Ofast")
 
 option(WITH_JPEG "Include JPEG decoder" ON)
 option(WITH_PNG "Include PNG decoder" ON)
