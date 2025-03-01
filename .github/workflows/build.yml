@@ -19,9 +19,6 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v4
 
-      - name: Validate Gradle Wrapper
-        uses: gradle/wrapper-validation-action@v2
-
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
@@ -38,12 +35,12 @@ jobs:
             nasm
 
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v3
+        uses: gradle/actions/setup-gradle@v4
 
       - name: Setup cmake
-        uses: jwlawson/actions-setup-cmake@v1.14
+        uses: jwlawson/actions-setup-cmake@v2
         with:
-          cmake-version: '3.22.1'
+          cmake-version: '3.31.5'
 
       - name: Build app
         run: ./gradlew assemble
