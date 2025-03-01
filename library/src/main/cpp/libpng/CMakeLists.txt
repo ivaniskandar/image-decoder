@@ -1,6 +1,6 @@
 FetchContent_Declare(libpng
-  GIT_REPOSITORY  https://github.com/glennrp/libpng
-  GIT_TAG         v1.6.42
+  GIT_REPOSITORY  https://github.com/pnggroup/libpng
+  GIT_TAG         v1.6.47
   BINARY_DIR      build
   SUBBUILD_DIR    subbuild
 )

@@ -1,6 +1,6 @@
 FetchContent_Declare(libjpeg-turbo
   GIT_REPOSITORY  https://github.com/libjpeg-turbo/libjpeg-turbo
-  GIT_TAG         2.1.90
+  GIT_TAG         2.1.91
   BINARY_DIR      build
   SUBBUILD_DIR    subbuild
 )

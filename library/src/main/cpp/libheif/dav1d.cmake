@@ -1,6 +1,6 @@
 FetchContent_Declare(dav1d
   GIT_REPOSITORY    https://github.com/videolan/dav1d.git
-  GIT_TAG           1.4.0
+  GIT_TAG           1.5.1
   CONFIGURE_COMMAND ""
   BUILD_COMMAND     ""
   BINARY_DIR        dav1d-build
